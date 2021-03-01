@@ -1,0 +1,249 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu?namespace=profile-eu"
+    }
+  },
+  "id": 117060781,
+  "name": "Jiu",
+  "gender": {
+    "type": "FEMALE",
+    "name": {
+      "en_US": "Female",
+      "es_MX": "Femenino",
+      "pt_BR": "Feminino",
+      "de_DE": "Weiblich",
+      "en_GB": "Female",
+      "es_ES": "Femenino",
+      "fr_FR": "Femme",
+      "it_IT": "Femmina",
+      "ru_RU": "Женский",
+      "ko_KR": "여성",
+      "zh_TW": "女性",
+      "zh_CN": "女性"
+    }
+  },
+  "faction": {
+    "type": "ALLIANCE",
+    "name": {
+      "en_US": "Alliance",
+      "es_MX": "Alianza",
+      "pt_BR": "Aliança",
+      "de_DE": "Allianz",
+      "en_GB": "Alliance",
+      "es_ES": "Alianza",
+      "fr_FR": "Alliance",
+      "it_IT": "Alleanza",
+      "ru_RU": "Альянс",
+      "ko_KR": "얼라이언스",
+      "zh_TW": "聯盟",
+      "zh_CN": "联盟"
+    }
+  },
+  "race": {
+    "key": {
+      "href": "https://eu.api.blizzard.com/data/wow/playable-race/4?namespace=static-9.0.2_36532-eu"
+    },
+    "name": {
+      "en_US": "Night Elf",
+      "es_MX": "Elfo de la noche",
+      "pt_BR": "Elfo Noturno",
+      "de_DE": "Nachtelf",
+      "en_GB": "Night Elf",
+      "es_ES": "Elfo de la noche",
+      "fr_FR": "Elfe de la nuit",
+      "it_IT": "Elfo della Notte",
+      "ru_RU": "Ночной эльф",
+      "ko_KR": "나이트 엘프",
+      "zh_TW": "夜精靈",
+      "zh_CN": "暗夜精灵"
+    },
+    "id": 4
+  },
+  "character_class": {
+    "key": {
+      "href": "https://eu.api.blizzard.com/data/wow/playable-class/3?namespace=static-9.0.2_36532-eu"
+    },
+    "name": {
+      "en_US": "Hunter",
+      "es_MX": "Cazador",
+      "pt_BR": "Caçador",
+      "de_DE": "Jäger",
+      "en_GB": "Hunter",
+      "es_ES": "Cazador",
+      "fr_FR": "Chasseur",
+      "it_IT": "Cacciatore",
+      "ru_RU": "Охотник",
+      "ko_KR": "사냥꾼",
+      "zh_TW": "獵人",
+      "zh_CN": "猎人"
+    },
+    "id": 3
+  },
+  "active_spec": {
+    "key": {
+      "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/253?namespace=static-9.0.2_36532-eu"
+    },
+    "name": {
+      "en_US": "Beast Mastery",
+      "es_MX": "Bestias",
+      "pt_BR": "Domínio das Feras",
+      "de_DE": "Tierherrschaft",
+      "en_GB": "Beast Mastery",
+      "es_ES": "Bestias",
+      "fr_FR": "Maîtrise des bêtes",
+      "it_IT": "Affinità Animale",
+      "ru_RU": "Повелитель зверей",
+      "ko_KR": "야수",
+      "zh_TW": "野獸控制",
+      "zh_CN": "野兽控制"
+    },
+    "id": 253
+  },
+  "realm": {
+    "key": {
+      "href": "https://eu.api.blizzard.com/data/wow/realm/622?namespace=dynamic-eu"
+    },
+    "name": {
+      "en_US": "Magtheridon",
+      "es_MX": "Magtheridon",
+      "pt_BR": "Magtheridon",
+      "de_DE": "Magtheridon",
+      "en_GB": "Magtheridon",
+      "es_ES": "Magtheridon",
+      "fr_FR": "Magtheridon",
+      "it_IT": "Magtheridon",
+      "ru_RU": "Magtheridon",
+      "ko_KR": "Magtheridon",
+      "zh_TW": "瑪瑟里頓",
+      "zh_CN": "玛瑟里顿"
+    },
+    "id": 622,
+    "slug": "magtheridon"
+  },
+  "guild": {
+    "key": {
+      "href": "https://eu.api.blizzard.com/data/wow/guild/magtheridon/ministry-of-magic?namespace=profile-eu"
+    },
+    "name": "Ministry of Magic",
+    "id": 40086701,
+    "realm": {
+      "key": {
+        "href": "https://eu.api.blizzard.com/data/wow/realm/622?namespace=dynamic-eu"
+      },
+      "name": {
+        "en_US": "Magtheridon",
+        "es_MX": "Magtheridon",
+        "pt_BR": "Magtheridon",
+        "de_DE": "Magtheridon",
+        "en_GB": "Magtheridon",
+        "es_ES": "Magtheridon",
+        "fr_FR": "Magtheridon",
+        "it_IT": "Magtheridon",
+        "ru_RU": "Magtheridon",
+        "ko_KR": "Magtheridon",
+        "zh_TW": "瑪瑟里頓",
+        "zh_CN": "玛瑟里顿"
+      },
+      "id": 622,
+      "slug": "magtheridon"
+    },
+    "faction": {
+      "type": "ALLIANCE",
+      "name": {
+        "en_US": "Alliance",
+        "es_MX": "Alianza",
+        "pt_BR": "Aliança",
+        "de_DE": "Allianz",
+        "en_GB": "Alliance",
+        "es_ES": "Alianza",
+        "fr_FR": "Alliance",
+        "it_IT": "Alleanza",
+        "ru_RU": "Альянс",
+        "ko_KR": "얼라이언스",
+        "zh_TW": "聯盟",
+        "zh_CN": "联盟"
+      }
+    }
+  },
+  "level": 60,
+  "experience": 0,
+  "achievement_points": 19910,
+  "achievements": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/achievements?namespace=profile-eu"
+  },
+  "titles": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/titles?namespace=profile-eu"
+  },
+  "pvp_summary": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/pvp-summary?namespace=profile-eu"
+  },
+  "encounters": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/encounters?namespace=profile-eu"
+  },
+  "media": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/character-media?namespace=profile-eu"
+  },
+  "hunter_pets": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/hunter-pets?namespace=profile-eu"
+  },
+  "last_login_timestamp": 1614466228000,
+  "average_item_level": 208,
+  "equipped_item_level": 208,
+  "specializations": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/specializations?namespace=profile-eu"
+  },
+  "statistics": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/statistics?namespace=profile-eu"
+  },
+  "mythic_keystone_profile": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/mythic-keystone-profile?namespace=profile-eu"
+  },
+  "equipment": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/equipment?namespace=profile-eu"
+  },
+  "appearance": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/appearance?namespace=profile-eu"
+  },
+  "collections": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/collections?namespace=profile-eu"
+  },
+  "reputations": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/reputations?namespace=profile-eu"
+  },
+  "quests": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/quests?namespace=profile-eu"
+  },
+  "achievements_statistics": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/achievements/statistics?namespace=profile-eu"
+  },
+  "professions": {
+    "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/professions?namespace=profile-eu"
+  },
+  "covenant_progress": {
+    "chosen_covenant": {
+      "key": {
+        "href": "https://eu.api.blizzard.com/data/wow/covenant/3?namespace=static-9.0.2_36532-eu"
+      },
+      "name": {
+        "en_US": "Night Fae",
+        "es_MX": "Noctifeéricos",
+        "pt_BR": "Feérios Noturnos",
+        "de_DE": "Nachtfae",
+        "en_GB": "Night Fae",
+        "es_ES": "sílfides nocturnas",
+        "fr_FR": "Faë nocturnes",
+        "it_IT": "Silfi della Notte",
+        "ru_RU": "Ночной народец",
+        "ko_KR": "나이트 페이",
+        "zh_TW": "暗夜妖精",
+        "zh_CN": "法夜"
+      },
+      "id": 3
+    },
+    "renown_level": 36,
+    "soulbinds": {
+      "href": "https://eu.api.blizzard.com/profile/wow/character/magtheridon/jiu/soulbinds?namespace=profile-eu"
+    }
+  }
+}
