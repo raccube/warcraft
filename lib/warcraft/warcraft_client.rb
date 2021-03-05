@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 module Warcraft
   class Client
     using StringUtils
 
-    attr_accessor :token
-    attr_accessor :region
+    attr_accessor :token, :region
 
     # @param [String] token Access Token
     # @param [Symbol] region Region to query for, e.g. <code>:eu</code>
@@ -18,7 +19,7 @@ module Warcraft
     def get(region, url)
       response = HTTParty.get("https://#{region}.api.blizzard.com#{url}",
                               headers: {
-                                'Authorization': "Bearer #{self.token}"
+                                'Authorization': "Bearer #{token}"
                               }, format: :plain)
       JSON.parse(response.body, symbolize_names: true)
     end
@@ -28,13 +29,13 @@ module Warcraft
       domain = region == :cn ? "www.battlenet.com.cn" : "#{region}.api.blizzard.com"
       response = HTTParty.get("https://#{domain}/oauth/userinfo?access_token",
                               headers: {
-                                'Authorization': "Bearer #{self.token}",
+                                'Authorization': "Bearer #{token}"
                               }, format: :plain)
       JSON.parse(response.body, symbolize_names: true)
     end
 
-    def character(realm, character_name, region = nil)
-      CharacterRequest.new(self, region ||= self.region, realm.slugify, character_name.slugify)
+    def character(realm, character_name, region = self.region)
+      CharacterRequest.new(self, region, realm.slugify, character_name.slugify)
     end
   end
 end

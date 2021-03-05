@@ -1,5 +1,9 @@
+# frozen_string_literal: true
+
 module StringUtils
   refine String do
-    def slugify = self.downcase.gsub(' ', '-')
+    def slugify
+      downcase.gsub(" ", "-")
+    end
   end
 end

@@ -17,5 +17,5 @@ RSpec.configure do |config|
 end
 
 def json_fixture(filename)
-  JSON.parse(File.read(File.join(__dir__, 'fixtures', filename)), symbolize_names: true)
+  JSON.parse(File.read(File.join(__dir__, "fixtures", filename)), symbolize_names: true)
 end

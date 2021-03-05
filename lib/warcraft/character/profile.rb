@@ -1,4 +1,6 @@
-require_relative '../api_response'
+# frozen_string_literal: true
+
+require_relative "../api_response"
 
 module Warcraft
   module Character
@@ -20,7 +22,12 @@ module Warcraft
     #   @return [Integer]
     class Profile < ApiResponse
       def last_login
-        Time.at(self.last_login_timestamp)
+        Time.at(last_login_timestamp)
+      end
+
+      # @return [String]
+      def url
+        @response.dig(:_links, :self, :href)
       end
     end
   end

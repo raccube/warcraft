@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 module Warcraft
   class CharacterRequest < ApiRequest
     # @param [Warcraft::Client] client
     def initialize(client, region, realm, character_name)
-      @client = client
+      super(client)
       @region = region
       @realm = realm
       @name = character_name

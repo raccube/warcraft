@@ -1,5 +1,7 @@
-require 'ostruct'
-require 'forwardable'
+# frozen_string_literal: true
+
+require "ostruct"
+require "forwardable"
 
 module Warcraft
   class ApiResponse
