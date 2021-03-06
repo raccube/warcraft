@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require_relative "../refinements/string_utils"
+require "httparty"
+
 module Warcraft
   class Client
     using StringUtils
@@ -13,15 +16,15 @@ module Warcraft
       self.region = region
     end
 
-    # @param [Symbol] region
     # @param [String] url
+    # @param [Symbol] region
     # @return [Hash]
-    def get(region, url)
-      response = HTTParty.get("https://#{region}.api.blizzard.com#{url}",
+    def get(url, region = nil)
+      response = HTTParty.get(region.nil? ? url : "https://#{region}.api.blizzard.com#{url}",
                               headers: {
                                 'Authorization': "Bearer #{token}"
                               }, format: :plain)
-      JSON.parse(response.body, symbolize_names: true).merge!({ _client: self })
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     # @param [Symbol] region Region to fetch data for (optional)

@@ -3,12 +3,11 @@
 module Warcraft
   class ApiRequest
     def initialize(client)
-      super
       @client = client
     end
 
     def get(url)
-      @client.get(@region, "#{url}?namespace=#{namespace}")
+      @client.get("#{url}?namespace=#{namespace}", @region)
     end
 
     def namespace

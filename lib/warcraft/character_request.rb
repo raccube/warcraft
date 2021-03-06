@@ -11,7 +11,7 @@ module Warcraft
     end
 
     def profile
-      Character::Profile.new get("/profile/wow/character/#{@realm}/#{@name}")
+      Character::Profile.new(client, get("/profile/wow/character/#{@realm}/#{@name}"))
     end
   end
 end

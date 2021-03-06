@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "warcraft"
+require "webmock/rspec"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -16,6 +17,10 @@ RSpec.configure do |config|
   end
 end
 
+def file_fixture(filename)
+  File.read(File.join(__dir__, "fixtures", filename))
+end
+
 def json_fixture(filename)
-  JSON.parse(File.read(File.join(__dir__, "fixtures", filename)), symbolize_names: true)
+  JSON.parse(file_fixture(filename), symbolize_names: true)
 end

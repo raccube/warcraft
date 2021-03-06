@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
-require "json"
+require_relative "../lib/warcraft/client"
 require_relative "../lib/warcraft/character/profile"
 
 describe Warcraft::Character::Profile do
-  let(:profile) { Warcraft::Character::Profile.new(json_fixture("character/profile.json")) }
+  let(:client) { Warcraft::Client.new("token", :eu) }
+  let(:profile) { Warcraft::Character::Profile.new(client, json_fixture("character/profile.json")) }
 
   it "should map the ID" do
     expect(profile.id).to eq(117_060_781)
