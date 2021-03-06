@@ -22,7 +22,71 @@ module Warcraft
     #   @return [Integer]
     class Profile < ApiResponse
       def last_login
-        Time.at(last_login_timestamp)
+        Time.at(last_login_timestamp / 1000)
+      end
+
+      def achievements
+        link
+      end
+
+      def titles
+        link
+      end
+
+      def pvp_summary
+        link
+      end
+
+      def encounters
+        link
+      end
+
+      def media
+        link
+      end
+
+      def hunter_pets
+        link
+      end
+
+      def specializations
+        link
+      end
+
+      def statistics
+        link
+      end
+
+      def mythic_keystone_profile
+        link
+      end
+
+      def equipment
+        link
+      end
+
+      def appearance
+        link
+      end
+
+      def collections
+        link
+      end
+
+      def reputations
+        link
+      end
+
+      def quests
+        link
+      end
+
+      def achievements_statistics
+        link
+      end
+
+      def professions
+        link
       end
 
       # @return [String]

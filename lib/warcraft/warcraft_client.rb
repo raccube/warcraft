@@ -21,7 +21,7 @@ module Warcraft
                               headers: {
                                 'Authorization': "Bearer #{token}"
                               }, format: :plain)
-      JSON.parse(response.body, symbolize_names: true)
+      JSON.parse(response.body, symbolize_names: true).merge!({ _client: self })
     end
 
     # @param [Symbol] region Region to fetch data for (optional)
