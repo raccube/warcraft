@@ -15,6 +15,16 @@ module Warcraft
       @memoized_responses = {}
     end
 
+    # @return [String]
+    def url
+      @response.dig(:_links, :self, :href)
+    end
+
+    # @return [Time]
+    def self.convert_time(timestamp)
+      Time.at(timestamp / 1000)
+    end
+
     protected
 
     def link

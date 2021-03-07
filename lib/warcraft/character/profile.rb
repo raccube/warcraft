@@ -22,7 +22,7 @@ module Warcraft
     #   @return [Integer]
     class Profile < ApiResponse
       def last_login
-        Time.at(last_login_timestamp / 1000)
+        ApiResponse.convert_time(last_login_timestamp)
       end
 
       def achievements
@@ -87,11 +87,6 @@ module Warcraft
 
       def professions
         link
-      end
-
-      # @return [String]
-      def url
-        @response.dig(:_links, :self, :href)
       end
     end
   end

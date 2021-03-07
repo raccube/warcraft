@@ -13,5 +13,9 @@ module Warcraft
     def profile
       Character::Profile.new(client, get("/profile/wow/character/#{@realm}/#{@name}"))
     end
+
+    def achievements
+      Character::Achievements.new(client, get("/profile/wow/character/#{@realm}/#{@name}/achievements"))
+    end
   end
 end
