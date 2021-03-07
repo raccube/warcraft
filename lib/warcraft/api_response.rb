@@ -29,7 +29,7 @@ module Warcraft
 
     def link
       resource_name = caller_locations(1, 1)[0].label.to_sym
-      @memoized_responses[resource_name] ||= @client.get(@response.dig(resource_name, :href))
+      @memoized_responses[resource_name] ||= @client.get(@response.dig(resource_name, :href), region: nil)
     end
   end
 end
