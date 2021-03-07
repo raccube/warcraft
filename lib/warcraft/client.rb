@@ -18,7 +18,7 @@ module Warcraft
     # @param [String] url
     # @param [Symbol] region
     # @return [Hash]
-    def get(url, region = nil, token = self.token)
+    def get(url, region: self.region, token: self.token)
       token = self.token if token.nil?
       response = HTTParty.get(region.nil? ? url : "https://#{region}.api.blizzard.com#{url}",
                               headers: {
@@ -28,7 +28,7 @@ module Warcraft
     end
 
     # @param [Symbol] region Region to fetch data for (optional)
-    def userinfo(token = self.token, region = nil)
+    def userinfo(region: self.region, token: self.token)
       domain = region == :cn ? "www.battlenet.com.cn" : "#{region}.api.blizzard.com"
       response = HTTParty.get("https://#{domain}/oauth/userinfo?access_token",
                               headers: {
