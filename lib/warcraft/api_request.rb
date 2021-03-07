@@ -2,16 +2,14 @@
 
 module Warcraft
   class ApiRequest
-    def initialize(client)
+    def initialize(client, region)
       @client = client
+      @region = region
     end
 
-    def get(url)
-      @client.get("#{url}?namespace=#{namespace}", @region)
-    end
-
-    def namespace
-      "profile-#{@region}"
+    def get(url, region: nil, token: nil, namespace: "profile-#{region}")
+      region ||= @region
+      @client.get("#{url}?namespace=#{namespace}", region: region, token: token)
     end
   end
 end

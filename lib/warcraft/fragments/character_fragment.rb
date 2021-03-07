@@ -2,12 +2,7 @@
 
 module Warcraft
   module Fragments
-    class CharacterFragment
-      def initialize(client, data)
-        @client = client
-        @data = data
-      end
-
+    class CharacterFragment < Fragment
       # @return [String]
       def url
         @data.dig(:key, :href)
@@ -22,7 +17,7 @@ module Warcraft
       end
 
       def realm
-        @realm ||= RealmFragment.new(@client, @data[:realm])
+        # TODO: Localised resource
       end
     end
   end
