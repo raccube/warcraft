@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "../api_response"
-require_relative "../fragments/character_fragment"
-
 module Warcraft
   module Character
     class Achievements < ApiResponse

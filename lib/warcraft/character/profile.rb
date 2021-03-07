@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "../api_response"
-
 module Warcraft
   module Character
     # @!method id

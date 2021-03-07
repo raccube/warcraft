@@ -24,7 +24,8 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "httparty"
+  spec.add_dependency "httparty", "~> 0.18"
+  spec.add_dependency "zeitwerk", "~> 2.4"
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html

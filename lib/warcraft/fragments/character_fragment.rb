@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "realm_fragment"
-
 module Warcraft
   module Fragments
     class CharacterFragment
