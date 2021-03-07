@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "../lib/warcraft/client"
-require_relative "../lib/warcraft/character/profile"
-
 describe Warcraft::Character::Profile do
   let(:client) { Warcraft::Client.new("token", :eu) }
   let(:profile) { Warcraft::Character::Profile.new(client, json_fixture("character/profile.json")) }

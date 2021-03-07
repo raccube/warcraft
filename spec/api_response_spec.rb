@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "../lib/warcraft/client"
-require_relative "../lib/warcraft/character/profile"
-
 describe Warcraft::ApiResponse do
   before do
     stub_request(:get,

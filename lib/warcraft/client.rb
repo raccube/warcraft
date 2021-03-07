@@ -4,7 +4,7 @@ require "httparty"
 
 module Warcraft
   class Client
-    using StringUtils
+    using Refinements::StringUtils
 
     attr_accessor :token, :region
 
