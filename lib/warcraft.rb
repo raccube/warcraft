@@ -6,5 +6,10 @@ loader.setup
 
 module Warcraft
   class Error < StandardError; end
-  # Your code goes here...
+
+  class InvalidTokenError < Error; end
+
+  class UnauthorizedError < Error; end
+
+  class ResourceNotFoundError < Error; end
 end
