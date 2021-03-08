@@ -37,10 +37,12 @@ module Warcraft
       JSON.parse(response.body, symbolize_names: true)
     end
 
+    # @return [Warcraft::AccountRequest]
     def account(token: self.token, region: self.region)
       AccountRequest.new(self, region, token)
     end
 
+    # @return [Warcraft::CharacterRequest]
     def character(realm:, character_name:, region: self.region)
       CharacterRequest.new(self, region, realm.slugify, character_name.slugify)
     end
