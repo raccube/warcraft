@@ -8,22 +8,28 @@ module Warcraft
       @token = token
     end
 
+    # Account Profile Summary
+    # @return [Warcraft::Account::Profile]
     def profile
       Account::Profile.new(@client, get("/profile/user/wow"))
     end
 
-    def protected_character
+    # Protected Character Profile Summary
+    def protected_character(realm_id, character_id)
       # TODO
     end
 
+    # Account Collections Index
     def collections
       # TODO
     end
 
+    # Account Mounts Collection Summary
     def mounts
       # TODO
     end
 
+    # Account Pets Collection Summary
     def pets
       # TODO
     end
